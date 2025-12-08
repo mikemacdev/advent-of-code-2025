@@ -26,7 +26,7 @@ import java.io.File
  * What do you get if you add up all of the invalid IDs using these new rules?
  */
 fun main() {
-    val sum = File("src/main/kotlin/advent/day02/day2-input.txt").readText()
+    val sum = File("src/main/kotlin/advent/day02/day2-example.txt").readText()
         .split(',')
         .flatMap { idRange ->
             val low = idRange.substringBefore('-').toLong()

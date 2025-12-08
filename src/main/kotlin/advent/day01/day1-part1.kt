@@ -26,7 +26,7 @@ fun main() {
     val dial = Dial()
     println("The dial starts by pointing at ${dial.num}.")
 
-    File("src/main/kotlin/advent/day01/day1-input.txt").readLines().map { rotation ->
+    File("src/main/kotlin/advent/day01/day1-example.txt").readLines().map { rotation ->
         val direction = rotation[0]
         val clicks = rotation.substringAfter(direction).toInt()
 

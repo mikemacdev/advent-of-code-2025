@@ -3,7 +3,7 @@ package advent.day02
 import java.io.File
 
 fun main() {
-    val sum = File("src/main/kotlin/advent/day02/day2-input.txt").readText()
+    val sum = File("src/main/kotlin/advent/day02/day2-example.txt").readText()
         .split(',')
         .flatMap { idRange ->
             val low = idRange.substringBefore('-').toLong()
